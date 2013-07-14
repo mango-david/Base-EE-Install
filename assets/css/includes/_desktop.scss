@@ -1,0 +1,15 @@
+header > .inner, section > .inner, footer > .inner{
+	padding: $line-height;
+}
+
+img.right{
+	float: right;
+	margin-left: $line-height;
+	margin-bottom: $line-height;
+}
+
+img.left{
+	float: left;
+	margin-right: $line-height;
+	margin-bottom: $line-height;
+}

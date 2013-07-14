@@ -1,0 +1,38 @@
+// compass is a library of Sass mixins for quicker CSS3 development
+@import "compass";
+
+// sets colours, max-widths, padding etc
+@import "includes/variables";
+// minimises browsers differences
+@import 'includes/reset';
+// global, generic css rules
+@import 'includes/global';
+// typography and button styling. Duh.
+@import 'includes/typography';
+@import 'includes/buttons';
+// grid system. Best not to touch this one
+@import 'includes/grid';
+
+// mobile phones and other small devices
+@import "includes/mobile";
+
+// tablets and other medium sized devices
+@media screen and (min-width: 30em) {
+
+	@import "includes/tablet";
+
+}
+
+// desktop computers
+@media screen and (min-width: 63.236em) {
+
+	@import "includes/desktop";
+
+}
+
+// widescreen monitors
+@media screen and (min-width: 100em) {
+
+	@import "includes/widescreen";
+
+}

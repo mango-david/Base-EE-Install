@@ -1,0 +1,42 @@
+@mixin button($color: $primary){
+	display: inline-block;
+	padding: $line-height/2 $line-height;
+	background: $color;
+	border-radius: 3px;
+	border: 1px solid darken($color, 10%);
+	color: #FFFFFF;
+	text-shadow: 1px 1px 0 rgba($dark, .05);
+	font-weight: 500;
+	text-decoration: none;
+	@include transition(background 0.1s ease-in-out);
+	
+	&:hover{
+		background: lighten($color, 5%);
+	}
+}
+
+.button{
+	@include button();
+	
+	&.secondary{
+		@include button($secondary);
+	}
+	
+	&.tertiary{
+		@include button($tertiary);
+	}
+	
+	&.dark{
+		@include button($dark);
+	}
+	
+	&.small{
+		padding: $line-height/2 $line-height;
+		font-size: 0.75em;
+	}
+	
+	&.large{
+		padding: $line-height/2 $line-height;
+		font-size: 1.5em;
+	}
+}

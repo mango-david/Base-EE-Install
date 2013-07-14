@@ -1,0 +1,33 @@
+a > img {
+	border: none;
+}
+
+*{
+  @include box-sizing(border-box);
+}
+
+header, section, footer{
+	width: 100%;
+}
+
+header > .inner, section > .inner, footer > .inner{
+	max-width: $max-width;
+	padding: $line-height/4;
+	margin: 0 auto;
+}
+
+a:last-child, p:last-child, li:last-child a{
+	margin-bottom: 0;
+}
+
+img.right{
+	float: right;
+	margin-left: $line-height/4;
+	margin-bottom: $line-height/4;
+}
+
+img.left{
+	float: left;
+	margin-right: $line-height/4;
+	margin-bottom: $line-height/4;
+}

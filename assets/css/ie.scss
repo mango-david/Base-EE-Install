@@ -1,0 +1,13 @@
+@import "compass";
+
+@import "includes/variables";
+@import 'includes/reset';
+@import 'includes/global';
+@import 'includes/typography';
+@import 'includes/grid';
+@import 'includes/buttons';
+
+/* Include all styles, without the media queries (DAMN MEDIA QUERIE-LESS IE8) */
+@import "includes/mobile";
+@import "includes/tablet";
+@import "includes/desktop";
